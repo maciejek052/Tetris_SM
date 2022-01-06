@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="playButton">Spiel</string>
+    <string name="highScore">Highscores</string>
+    <string name="settings">Optionen</string>
+    <string name="about">Information</string>
+    <string name="logo">Tetris</string>
+    <string name="chooseLanguage">Sprache des Spiels:</string>
+    <string name="darkMode">Dunkelmodus</string>
+    <string name="language">Sprache</string>
+    <string name="music">Musik</string>
+    <string name="back">Zurück</string>
+    <string name="tetrisWikipedia">Tetris ist ein Puzzle-Videospiel, das 1984 vom sowjetischen Software-Ingenieur Alexey Pajitnov entwickelt wurde. In Tetris vervollständigen die Spieler Linien, indem sie unterschiedlich geformte Teile (Tetrominos) bewegen, die auf das Spielfeld fallen. Die ausgefüllten Zeilen verschwinden und geben dem Spieler Punkte, und der Spieler kann damit fortfahren, die frei gewordenen Felder zu füllen. Das Spiel endet, wenn das Spielfeld gefüllt ist. Je länger der Spieler dieses Ergebnis verzögern kann, desto höher wird seine Punktzahl sein.</string>
+    <string name="projectInfo">Abschlussprojekt \"Mobile Systeme\" an der Technische Universität Białystok. Autor: Maciej Czech</string>
+    <string name="clearButton">Klar</string>
+</resources>

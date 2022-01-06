@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="playButton">Zagraj</string>
+    <string name="highScore">Najlepsze wyniki</string>
+    <string name="settings">Opcje</string>
+    <string name="about">Informacje</string>
+    <string name="logo">Tetris</string>
+    <string name="chooseLanguage">Wybierz język:</string>
+    <string name="darkMode">Ciemny motyw</string>
+    <string name="language">Język</string>
+    <string name="music">Muzyka</string>
+    <string name="back">Powrót</string>
+    <string name="tetrisWikipedia">Tetris to gra logiczna, stworzona przez radzieckiego inżyniera oprogramowania Aleksieja Pajitnowa w 1984 roku. W Tetrisie gracze uzupełniają linie, przesuwając elementy o różnych kształtach (tetromino), które pojawiają się na polu gry. Wypełnione linie znikają i przyznają punkty graczowi, a gracz może przystąpić do wypełniania opuszczonych miejsc. Gra kończy się, gdy pole gry jest zapełnione. Im dłużej usunie więcej linii, tym wyższy będzie jego wynik.</string>
+    <string name="projectInfo">Projekt końcowy na przedmiot \"Systemy Mobilne\" na Politechnice Białostockiej. Autor: Maciej Czech</string>
+    <string name="clearButton">Wyczyść</string>
+</resources>
