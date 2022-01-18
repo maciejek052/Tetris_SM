@@ -13,10 +13,13 @@ import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.CompoundButton;
+import android.widget.Switch;
 
 import java.util.Locale;
 
+
 public class SettingsActivity extends AppCompatActivity {
+    public static boolean musicEnabled = true;
     MainActivity.MyCallBack callBack;
     @Override
 
@@ -56,6 +59,22 @@ public class SettingsActivity extends AppCompatActivity {
                 } else {
                     AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_NO);
                     recreate();
+                }
+            }
+        });
+
+        // music switch
+        SwitchCompat musicSwitch;
+        musicSwitch = findViewById(R.id.musicSwitch);
+        if (musicEnabled == true)
+            musicSwitch.setChecked(true);
+        musicSwitch.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
+            @Override
+            public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
+                if (isChecked) {
+                    musicEnabled = true;
+                } else {
+                    musicEnabled = false;
                 }
             }
         });

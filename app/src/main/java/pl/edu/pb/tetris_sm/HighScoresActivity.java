@@ -1,55 +1,45 @@
 package pl.edu.pb.tetris_sm;
 
+import androidx.annotation.RequiresApi;
 import androidx.appcompat.app.AppCompatActivity;
 
-import android.content.Context;
-import android.content.Intent;
+import android.os.Build;
 import android.os.Bundle;
-import android.view.View;
-import android.widget.ArrayAdapter;
-import android.widget.Button;
 import android.widget.ListView;
-import android.widget.Toast;
 
-import java.util.ArrayList;
+import java.util.Collections;
+import java.util.Comparator;
+import java.util.List;
+
+import pl.edu.pb.tetris_sm.api.LocalScoreListAdapter;
+import pl.edu.pb.tetris_sm.db.AppDatabase;
+import pl.edu.pb.tetris_sm.db.Score;
 
 public class HighScoresActivity extends AppCompatActivity {
 
-    ListView listview;
+    private ListView listViewScoreList;
+    private List<Score> scoreList;
+
+
+    @RequiresApi(api = Build.VERSION_CODES.N)
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_high_scores);
-        // create listview
-        listview = findViewById(R.id.highScoresList);
-        ArrayList<String> arrayList = new ArrayList<>();
-        // populate listview with example data
-        for (int i = 0; i < 25; i++) {
-            arrayList.add(Integer.toString(i+10));
-        }
-        ArrayAdapter arrayAdapter = new ArrayAdapter(this, android.R.layout.simple_list_item_1,arrayList);
-        listview.setAdapter(arrayAdapter);
-        // back button
-        Button back = findViewById((R.id.backButton3));
-        back.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                finish();
-            }
-        });
-
-        // clear button
-        Button clear = findViewById((R.id.clearButton));
-        clear.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Context context = getApplicationContext();
-                CharSequence text = "To kiedyś zostanie zaimplementowane, przysięgam!";
-                int duration = Toast.LENGTH_SHORT;
-
-                Toast toast = Toast.makeText(context, text, duration);
-                toast.show();
-            }
-        });
+        listViewScoreList = (ListView) findViewById(R.id.listViewScoreListLocal);
+        loadUserList();
     }
+
+    @RequiresApi(api = Build.VERSION_CODES.N)
+    private void loadUserList() {
+        AppDatabase db = AppDatabase.getDbInstance(this.getApplicationContext());
+        scoreList = db.ScoreDao().getAllScores();
+        // sort our list
+        scoreList.sort(Comparator.comparing(Score::getScore));
+        Collections.reverse(scoreList);
+
+        listViewScoreList.setAdapter(new LocalScoreListAdapter(getApplicationContext(), scoreList));
+    }
+
+
 }

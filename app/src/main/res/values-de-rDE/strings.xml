@@ -13,4 +13,22 @@
     <string name="tetrisWikipedia">Tetris ist ein Puzzle-Videospiel, das 1984 vom sowjetischen Software-Ingenieur Alexey Pajitnov entwickelt wurde. In Tetris vervollständigen die Spieler Linien, indem sie unterschiedlich geformte Teile (Tetrominos) bewegen, die auf das Spielfeld fallen. Die ausgefüllten Zeilen verschwinden und geben dem Spieler Punkte, und der Spieler kann damit fortfahren, die frei gewordenen Felder zu füllen. Das Spiel endet, wenn das Spielfeld gefüllt ist. Je länger der Spieler dieses Ergebnis verzögern kann, desto höher wird seine Punktzahl sein.</string>
     <string name="projectInfo">Abschlussprojekt \"Mobile Systeme\" an der Technische Universität Białystok. Autor: Maciej Czech</string>
     <string name="clearButton">Klar</string>
+    <string name="game_score_string">"Punkte: "</string>
+    <string name="game_over_textview_string">Spiel ist aus</string>
+    <string name="game_over_textview_string2">Tippen, um fortzufahren</string>
+    <string name="game_difficulty">Stufe: einfach</string>
+    <string name="game_difficulty2">Stufe: mittler</string>
+    <string name="game_difficulty3">Stufe: schwierig</string>
+    <string name="cancelSavingScoreButton">Abbrechen</string>
+    <string name="saveHighScoreButton">Speichern (server)</string>
+    <string name="nameTextbox">Name</string>
+    <string name="finalScoreText">Ihr Ergebnis:</string>
+    <string name="failureSavingToServerToast">Saving to server failed!</string>
+    <string name="savedToServerToast">Saved on server</string>
+    <string name="saveHighScoreLocallyButton">Speichern (local)</string>
+    <string name="failureGettingDataFromServer">Daten können nicht vom Server abgerufen werden!</string>
+    <string name="TextApiHighScores">Server gespeicherte Highscores</string>
+    <string name="savedToLocalDbToast">Lokal gespeicherte Highscores</string>
+    <string name="TextLocalHighScores">Highscore lokal gespeichert</string>
+    <string name="paused">Pause</string>
 </resources>

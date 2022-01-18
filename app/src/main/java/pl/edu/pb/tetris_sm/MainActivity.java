@@ -8,12 +8,14 @@ import android.content.SharedPreferences;
 import android.content.res.Configuration;
 import android.os.Bundle;
 import android.util.Log;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
+import android.widget.PopupMenu;
 
 import java.util.Locale;
 
-public class MainActivity extends AppCompatActivity {
+public class MainActivity extends AppCompatActivity implements PopupMenu.OnMenuItemClickListener {
 
     // callback to update language user changed in settings
     public interface MyCallBack {
@@ -34,6 +36,17 @@ public class MainActivity extends AppCompatActivity {
             }
         };
 
+        // play button
+        Button play = findViewById((R.id.playButton));
+        play.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this, GameActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        /*
         // high scores button
         Button highScores = findViewById((R.id.highScoreButton));
         highScores.setOnClickListener(new View.OnClickListener() {
@@ -43,6 +56,7 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+        */
 
         // settings button
         Button settings = findViewById(R.id.settingsButton);
@@ -91,4 +105,26 @@ public class MainActivity extends AppCompatActivity {
         setLocale(language);
     }
 
+    public void showPopup(View v) {
+        PopupMenu popup = new PopupMenu(this, v);
+        popup.setOnMenuItemClickListener(this);
+        popup.inflate(R.menu.popup_menu);
+        popup.show();
+    }
+
+    @Override
+    public boolean onMenuItemClick(MenuItem item) {
+        switch (item.getItemId()) {
+            case R.id.localhighscore:
+                Intent intent = new Intent(MainActivity.this, HighScoresActivity.class);
+                startActivity(intent);
+                return true;
+            case R.id.serverhighscore:
+                Intent intent2 = new Intent(MainActivity.this, HighScoresApiActivity.class);
+                startActivity(intent2);
+                return true;
+            default:
+                return false;
+        }
+    }
 }

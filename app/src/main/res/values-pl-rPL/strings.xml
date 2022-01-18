@@ -13,4 +13,22 @@
     <string name="tetrisWikipedia">Tetris to gra logiczna, stworzona przez radzieckiego inżyniera oprogramowania Aleksieja Pajitnowa w 1984 roku. W Tetrisie gracze uzupełniają linie, przesuwając elementy o różnych kształtach (tetromino), które pojawiają się na polu gry. Wypełnione linie znikają i przyznają punkty graczowi, a gracz może przystąpić do wypełniania opuszczonych miejsc. Gra kończy się, gdy pole gry jest zapełnione. Im dłużej usunie więcej linii, tym wyższy będzie jego wynik.</string>
     <string name="projectInfo">Projekt końcowy na przedmiot \"Systemy Mobilne\" na Politechnice Białostockiej. Autor: Maciej Czech</string>
     <string name="clearButton">Wyczyść</string>
+    <string name="game_score_string">"Wynik: "</string>
+    <string name="game_over_textview_string">Koniec gry</string>
+    <string name="game_over_textview_string2">Dotknij aby kontynuować</string>
+    <string name="game_difficulty">Poziom: łatwy</string>
+    <string name="game_difficulty2">Poziom: średni</string>
+    <string name="game_difficulty3">Poziom: trudny</string>
+    <string name="cancelSavingScoreButton">Anuluj</string>
+    <string name="saveHighScoreButton">Zapisz na serwerze</string>
+    <string name="nameTextbox">Imię</string>
+    <string name="finalScoreText">Twój wynik:</string>
+    <string name="savedToServerToast">Zapisano na serwerze!</string>
+    <string name="failureSavingToServerToast">NIE UDAŁO SIĘ ZAPISAĆ NA SERWERZE!</string>
+    <string name="saveHighScoreLocallyButton">Zapisz lokalnie</string>
+    <string name="savedToLocalDbToast">Zapisano w lokalnej bazie</string>
+    <string name="TextLocalHighScores">Wyniki zapisane lokalnie</string>
+    <string name="TextApiHighScores">Wyniki zapisane na serwerze</string>
+    <string name="failureGettingDataFromServer">Nie można uzyskać danych z serwera!</string>
+    <string name="paused">Pauza</string>
 </resources>

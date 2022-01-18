@@ -4,10 +4,15 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="..\:/Users/macie/AndroidStudioProjects/Tetris_SM/app/src/main/res/layout/activity_about.xml" value="0.33" />
-        <entry key="..\:/Users/macie/AndroidStudioProjects/Tetris_SM/app/src/main/res/layout/activity_game.xml" value="0.1752252252252252" />
-        <entry key="..\:/Users/macie/AndroidStudioProjects/Tetris_SM/app/src/main/res/layout/activity_high_scores.xml" value="0.33" />
-        <entry key="..\:/Users/macie/AndroidStudioProjects/Tetris_SM/app/src/main/res/layout/activity_main.xml" value="0.25" />
+        <entry key="..\:/Users/macie/AndroidStudioProjects/Tetris_SM/app/src/main/res/layout/activity_game.xml" value="0.22" />
+        <entry key="..\:/Users/macie/AndroidStudioProjects/Tetris_SM/app/src/main/res/layout/activity_game_over.xml" value="0.33" />
+        <entry key="..\:/Users/macie/AndroidStudioProjects/Tetris_SM/app/src/main/res/layout/activity_high_scores.xml" value="0.25" />
+        <entry key="..\:/Users/macie/AndroidStudioProjects/Tetris_SM/app/src/main/res/layout/activity_high_scores_api.xml" value="0.2328828828828829" />
+        <entry key="..\:/Users/macie/AndroidStudioProjects/Tetris_SM/app/src/main/res/layout/activity_main.xml" value="0.22" />
         <entry key="..\:/Users/macie/AndroidStudioProjects/Tetris_SM/app/src/main/res/layout/activity_settings.xml" value="0.2" />
+        <entry key="..\:/Users/macie/AndroidStudioProjects/Tetris_SM/app/src/main/res/layout/score_layout.xml" value="0.5" />
+        <entry key="..\:/Users/macie/AndroidStudioProjects/Tetris_SM/app/src/main/res/layout/score_row_layout.xml" value="0.18" />
+        <entry key="..\:/Users/macie/AndroidStudioProjects/Tetris_SM/app/src/main/res/menu/popup_menu.xml" value="0.5" />
       </map>
     </option>
   </component>

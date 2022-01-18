@@ -11,7 +11,27 @@
     <string name="music">Music</string>
     <string name="back">Back</string>
     <string name="pbLogo" translatable="false">Politechnika Białostocka</string>
-    <string name="tetrisWikipedia" >Tetris is a puzzle video game created by Soviet software engineer Alexey Pajitnov in 1984. In Tetris, players complete lines by moving differently shaped pieces (tetrominoes), which descend onto the playing field. The completed lines disappear and grant the player points, and the player can proceed to fill the vacated spaces. The game ends when the playing field is filled. The longer the player can delay this outcome, the higher their score will be.</string>
+    <string name="tetrisWikipedia">Tetris is a puzzle video game created by Soviet software engineer Alexey Pajitnov in 1984. In Tetris, players complete lines by moving differently shaped pieces (tetrominoes), which descend onto the playing field. The completed lines disappear and grant the player points, and the player can proceed to fill the vacated spaces. The game ends when the playing field is filled. The longer the player can delay this outcome, the higher their score will be.</string>
     <string name="projectInfo">Final project for \"Mobile Systems\" at Białystok University of Technology. Author: Maciej Czech</string>
     <string name="clearButton">Clear</string>
+    <string name="game_score_string">"Score: "</string>
+    <string name="game_over_textview_string">Game Over</string>
+    <string name="game_over_textview_string2">Tap to continue</string>
+    <string name="game_difficulty">Level: easy</string>
+    <string name="game_difficulty2">Level: medium</string>
+    <string name="game_difficulty3">Level: hard</string>
+    <string name="finalScoreValue" translatable="false">0</string>
+    <string name="cancelSavingScoreButton">Cancel</string>
+    <string name="saveHighScoreButton">Save on server</string>
+    <string name="nameTextbox">Name</string>
+    <string name="finalScoreText">Your score:</string>
+    <string name="savedToServerToast">Saved on server!</string>
+    <string name="failureSavingToServerToast">Saving to server failed!</string>
+    <string name="saveHighScoreLocallyButton" >Save locally</string>
+    <string name="failureGettingDataFromServer">Can\'t get data from server!</string>
+    <string name="TextApiHighScores">High scores stored on server</string>
+    <string name="savedToLocalDbToast">Saved to local database</string>
+    <string name="TextLocalHighScores">High score stored locally</string>
+    <string name="paused">Paused</string>
+
 </resources>
